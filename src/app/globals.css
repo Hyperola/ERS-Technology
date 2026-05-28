@@ -1,0 +1,76 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  /* True Brand Corporate Blue - Taken from the primary ERS Logo typography */
+  --color-ers-blue: #0B3C7B;
+  --color-ers-blue-hover: #072A57;
+
+  /* True Brand Arrow Gold/Orange - Taken from the upward metric trend arrow */
+  --color-ers-gold: #F2A71B;
+  --color-ers-gold-hover: #D99110;
+
+  /* Premium Institutional Light Canvas - Clean background matching executive stationery */
+  --color-ers-bg: #FFFFFF;
+  --color-ers-bg-alt: #F7F9FC;
+
+  /* Typography Contrast Colors */
+  --color-ers-text-dark: #1E293B;
+  --color-ers-text-muted: #64748B;
+
+  /* Registering Custom Keyframe Animations for Tailwind v4 */
+  --animate-fadeIn: fadeIn 0.6s ease-out forwards;
+  --animate-gridSlide: gridSlide 20s linear infinite;
+  --animate-bgPulse: bgPulse 12s ease-in-out infinite;
+}
+
+/* Defining the core animation mechanics */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gridSlide {
+  from { background-position: 0 0; }
+  to { background-position: 100% 100%; }
+}
+
+@keyframes bgPulse {
+  0%, 100% { transform: scale(1.02); opacity: 0.12; }
+  50% { transform: scale(1.06); opacity: 0.18; }
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-ers-bg);
+  color: var(--color-ers-text-dark);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global transitions for a smooth premium UX feel */
+a, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom scrollbar optimized for the new corporate palette */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ers-bg-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ers-blue);
+}
