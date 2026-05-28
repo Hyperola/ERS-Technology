@@ -79,6 +79,10 @@ export default function FinancialAnalyticsPage() {
           <p className="text-slate-600 text-sm font-light leading-relaxed max-w-4xl border-t border-slate-100 pt-6">
             This analytical module pulls messy transactional data loops from field devices and cleanses them into organized data sets, giving management teams accurate projections to optimize long-term economic planning.
           </p>
+
+          <div className="pt-4 border-t border-slate-100 flex justify-between items-center text-[9px] font-mono text-slate-400 tracking-wider">
+            ANALYTICS_ENGINE // CORE_NODE_08
+          </div>
         </div>
       </section>
 

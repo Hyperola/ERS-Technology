@@ -10,16 +10,16 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F8FAFC] text-[#0A2540] overflow-x-hidden animate-fadeIn selection:bg-[#E5981A]/30 selection:text-[#0A2540]">
+    <div className="flex flex-col min-h-screen bg-[#F8FAFC] text-[#0A2540] overflow-x-hidden selection:bg-[#E5981A]/30 selection:text-[#0A2540]">
       
       {/* 1. KINETIC IMMERSIVE HERO BLOCK */}
       <section className="relative bg-[#0A2540] text-white py-32 px-6 md:px-12 lg:px-24 flex items-center justify-start border-b border-[#E5981A]/20 overflow-hidden min-h-[60vh]">
-        {/* Animated Cyber Grid Canvas Layer */}
-        <div className="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#E5981A_1px,transparent_1px),linear-gradient(to_bottom,#E5981A_1px,transparent_1px)] bg-[size:4rem_4rem] animate-gridSlide" />
+        {/* Fine Structural Grid */}
+        <div className="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#FFFFFF_1px,transparent_1px),linear-gradient(to_bottom,#FFFFFF_1px,transparent_1px)] bg-[size:4rem_4rem]" />
         
         {/* Deep Infrastructure Photo Blend */}
         <div 
-          className="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-15 animate-bgPulse"
+          className="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-15"
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000')` }}
         />
 
@@ -28,11 +28,11 @@ export default function AboutPage() {
         
         <div className="max-w-4xl space-y-6 relative z-10">
           <div className="inline-flex items-center gap-2 border border-[#E5981A]/40 bg-[#0F355C]/80 backdrop-blur-md px-4 py-2 rounded-full text-[10px] font-black tracking-widest text-[#E5981A] uppercase shadow-xl shadow-black/20">
-            ⚡ Corporate Identity Matrix
+            Corporate Identity
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1]">
             Modernizing Africa's <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E5981A] via-amber-200 to-[#E5981A] animate-[pulse_5s_ease-in-out_infinite]">
+            <span className="text-[#E5981A]">
               Revenue Core
             </span>
           </h1>
@@ -56,9 +56,6 @@ export default function AboutPage() {
                 “To become Africa’s leading Digital Revenue Infrastructure powering transparent and intelligent economies.”
               </p>
             </div>
-            <span className="text-[10px] font-mono font-bold tracking-widest text-slate-400 uppercase mt-8 block">
-              SYSTEM_VISION // CORE_TARGET
-            </span>
           </div>
 
           {/* Mission Interactive Panel */}
@@ -71,20 +68,17 @@ export default function AboutPage() {
                 To provide secure, innovative, and scalable digital systems that optimize revenue generation, monitoring, collection, reconciliation, and remittance across Africa.
               </p>
             </div>
-            <span className="text-[10px] font-mono font-bold tracking-widest text-slate-400 uppercase mt-8 block">
-              SYSTEM_MISSION // SCALABLE_GRID
-            </span>
           </div>
 
         </div>
       </section>
 
-      {/* 3. THE 6 PILLARS GRID (Clean Typographic Numeric Labels) */}
+      {/* 3. THE 6 PILLARS GRID */}
       <section className="bg-white py-24 px-6 md:px-12 lg:px-24 border-y border-slate-200 relative">
         <div className="max-w-7xl mx-auto space-y-16">
           
           <div className="text-center max-w-xl mx-auto space-y-3">
-            <span className="text-xs font-black text-[#E5981A] uppercase tracking-widest block">Structural Code</span>
+            <span className="text-xs font-black text-[#E5981A] uppercase tracking-widest block">Structural Framework</span>
             <h2 className="text-3xl md:text-5xl font-black tracking-tight text-[#0A2540]">Our Core Values</h2>
             <div className="h-1 w-16 bg-[#E5981A] mx-auto rounded-full mt-4" />
           </div>
@@ -96,7 +90,6 @@ export default function AboutPage() {
                 className="group p-8 bg-[#F8FAFC] rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:bg-white hover:border-[#E5981A]/30 transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between"
               >
                 <div>
-                  {/* Clean Numeric Indicator Container */}
                   <div className="h-12 w-12 bg-white group-hover:bg-[#0A2540] group-hover:text-white rounded-xl shadow-xs flex items-center justify-center font-mono font-black text-sm text-[#0A2540] transition-all duration-300 mb-6 border border-slate-200 group-hover:border-transparent">
                     0{idx + 1}
                   </div>
@@ -106,9 +99,6 @@ export default function AboutPage() {
                   <p className="text-slate-600 text-xs leading-relaxed font-light">
                     {value.desc}
                   </p>
-                </div>
-                <div className="mt-8 border-t border-slate-200 pt-4 text-[9px] font-mono text-slate-400 tracking-wider">
-                  SECURE_METRIC_VALUE_0{idx + 1}
                 </div>
               </div>
             ))}
@@ -134,21 +124,21 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* High-Tech Glassmorphism Governance Console */}
+        {/* High-Tech Governance Console */}
         <div className="p-8 md:p-12 bg-[#0A2540] text-white rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden group">
           <div className="absolute -right-20 -bottom-20 w-64 h-64 rounded-full border border-white/5 group-hover:scale-110 transition-transform duration-700 pointer-events-none" />
           
           <div className="space-y-6 relative z-10">
             <div className="inline-block text-[9px] font-mono tracking-widest bg-white/5 border border-white/10 px-3 py-1 rounded-sm text-[#E5981A] font-bold uppercase">
-              Regulatory Infrastructure // Act 2026
+              Regulatory Infrastructure
             </div>
             <h3 className="text-2xl font-black text-white tracking-tight">Corporate Governance</h3>
             <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-light">
-              Our operational framework is bound strictly to severe corporate governance metrics, comprehensive data encryption audits, and uncompromising regulatory compliance mechanisms. ERS operations ensure that every stakeholder—from local transport unions to federal state departments—is protected by strict cryptographic safety walls and immutable tracking histories.
+              Our operational framework is bound strictly to standard corporate governance metrics, comprehensive data encryption audits, and uncompromising regulatory compliance mechanisms. ERS operations ensure that every stakeholder—from local transport unions to federal state departments—is protected by strict cryptographic safety walls and immutable tracking histories.
             </p>
             <div className="pt-4 flex items-center gap-3 border-t border-white/10">
-              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="font-mono text-[10px] text-slate-400 tracking-wider uppercase">Vault Compliance Status: Secure</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-500" />
+              <span className="font-mono text-[10px] text-slate-400 tracking-wider uppercase">Compliance Status: Operational</span>
             </div>
           </div>
         </div>
