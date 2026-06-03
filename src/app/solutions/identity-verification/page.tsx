@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function IdentityVerificationPage() {
   return (
-    <main className="min-h-screen bg-[#F8FAFC] text-[#0A2540] overflow-x-hidden animate-fadeIn selection:bg-[#E5981A]/30 selection:text-[#0A2540]">
+    <main className="min-h-screen bg-[#F8FAFC] text-[#0A2540] overflow-x-hidden animate-fadeIn selection:bg-[#E5981A]/30 selection:text-[#0A2540] font-['Calibri',Calibri,Segoe_UI,sans-serif]">
       
       {/* 1. IMMERSIVE HERO BANNER MODULE */}
-      <section className="relative bg-[#0A2540] text-white py-24 px-6 md:px-12 lg:px-24 flex flex-col justify-center min-h-[50vh] overflow-hidden">
+      <section className="relative bg-[#0A2540] text-white py-24 px-6 md:px-12 lg:px-24 flex flex-col justify-center min-h-[50vh] overflow-hidden text-left">
         {/* Infrastructure Background Photo Layer */}
         <div 
           className="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-15 scale-105 animate-bgPulse"
@@ -18,14 +18,14 @@ export default function IdentityVerificationPage() {
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#E5981A]/10 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-5xl space-y-6 relative z-10">
-          <div className="inline-flex items-center gap-2 border border-[#E5981A]/30 bg-white/5 backdrop-blur-xs px-4 py-2 rounded-full text-xs font-bold tracking-widest text-[#E5981A] uppercase">
+          <div className="inline-flex items-center gap-2 border border-[#E5981A]/30 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold tracking-widest text-[#E5981A] uppercase">
             Solutions Architecture Group
           </div>
-          <h1 className="text-4xl md:text-6xl font-black tracking-tight leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1]">
             Identity & Verification <br />
             <span className="text-[#E5981A]">Registry Systems</span>
           </h1>
-          <p className="text-slate-200 text-lg md:text-xl max-w-3xl leading-relaxed font-light">
+          <p className="text-slate-200 text-lg md:text-xl max-w-3xl leading-relaxed font-normal">
             Digital onboarding channels, streamlined operator registration profiles, automated KYC validations, and smart authentication cards built to track and secure field operator networks.
           </p>
         </div>
@@ -36,43 +36,40 @@ export default function IdentityVerificationPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Main Content Card */}
-          <div className="lg:col-span-7 bg-white border border-slate-200 p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-between group hover:border-[#E5981A]/30 transition-all duration-300 transform hover:-translate-y-1 min-h-[340px]">
+          <div className="lg:col-span-7 bg-white border border-slate-200 p-8 md:p-10 rounded-2xl shadow-xl flex flex-col justify-between group hover:border-[#E5981A]/40 transition-all duration-300 transform hover:-translate-y-1 min-h-[340px] text-left">
             <div className="space-y-4">
               <div className="h-2 w-2 rounded-full bg-[#E5981A]" />
-              <h3 className="text-2xl font-black text-[#0A2540] tracking-tight group-hover:text-[#E5981A] transition-colors">
+              <h3 className="text-2xl font-bold text-[#0A2540] tracking-tight group-hover:text-[#A62626] transition-colors">
                 Unifying the Unbanked & Informal Sectors
               </h3>
-              <p className="text-slate-600 text-sm font-light leading-relaxed">
+              <p className="text-slate-600 text-sm font-normal leading-relaxed">
                 True transaction visibility is impossible without clear operator identity tracking. Our system runs automated identity checks that convert anonymous informal operators into verified, authorized actors within your digital platform network.
               </p>
             </div>
             
             <div className="mt-8 border-t border-slate-100 pt-6">
-              <div className="bg-[#F8FAFC] border border-slate-200/60 p-4 rounded-xl text-xs font-mono text-[#0A2540] font-black tracking-tight">
+              <div className="bg-[#F8FAFC] border border-slate-200/60 p-4 rounded-xl text-xs font-mono text-[#0A2540] font-bold tracking-tight">
                 SECURE KYC CHECKLIST INTEGRATED VIA NATIONAL REGISTRIES
               </div>
             </div>
           </div>
           
           {/* Side Feature List & Conversion Card */}
-          <div className="lg:col-span-5 bg-white border border-slate-200 p-8 rounded-2xl flex flex-col justify-between group hover:border-[#E5981A]/30 transition-all duration-300 shadow-xl transform hover:-translate-y-1 min-h-[340px]">
+          <div className="lg:col-span-5 bg-white border border-slate-200 p-8 rounded-2xl flex flex-col justify-between group hover:border-[#E5981A]/40 transition-all duration-300 shadow-xl transform hover:-translate-y-1 min-h-[340px] text-left">
             <div className="space-y-4">
-              <div className="h-10 w-10 bg-[#F8FAFC] group-hover:bg-[#0A2540] group-hover:text-white rounded-xl flex items-center justify-center font-mono font-black text-xs text-[#0A2540] transition-all duration-300 border border-slate-200/60 group-hover:border-transparent">
-                M07
-              </div>
-              <span className="text-[10px] font-mono font-black text-[#E5981A] tracking-widest uppercase block">
-                IDENTITY MODULE FEATURES
+              <span className="text-[10px] font-mono font-bold text-[#E5981A] tracking-widest uppercase block">
+                Identity Module Features
               </span>
               
-              <ul className="space-y-3 text-xs text-slate-600 font-light">
+              <ul className="space-y-3 text-xs text-slate-600 font-normal">
                 <li className="flex items-center gap-2">
-                  <span className="text-[#E5981A] font-black text-sm">✓</span> Automated Biometric Operator Logs
+                  <span className="text-[#E5981A] font-bold text-sm">✓</span> Automated Biometric Operator Logs
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-[#E5981A] font-black text-sm">✓</span> QR-Embedded Smart Merchant Cards
+                  <span className="text-[#E5981A] font-bold text-sm">✓</span> QR-Embedded Smart Merchant Cards
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-[#E5981A] font-black text-sm">✓</span> Persistent Field Auditing History Traceability
+                  <span className="text-[#E5981A] font-bold text-sm">✓</span> Persistent Field Auditing History Traceability
                 </li>
               </ul>
             </div>
@@ -80,7 +77,7 @@ export default function IdentityVerificationPage() {
             <div className="mt-8 border-t border-slate-100 pt-6">
               <Link 
                 href="/contact" 
-                className="w-full text-center bg-[#0A2540] hover:bg-[#0A2540]/90 text-white text-xs font-mono font-black uppercase tracking-widest py-4 rounded-xl transition-all block shadow-md hover:shadow-lg"
+                className="w-full text-center bg-[#0A2540] hover:bg-[#A62626] text-white text-xs font-mono font-bold uppercase tracking-widest py-4 rounded-xl transition-all block shadow-md hover:shadow-lg active:scale-95 duration-150"
               >
                 Initiate Identity Matrix
               </Link>
@@ -91,23 +88,23 @@ export default function IdentityVerificationPage() {
       </section>
 
       {/* 3. HIGH-TECH INSTITUTIONAL ACTION PANEL */}
-      <section className="py-12 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full">
+      <section className="py-12 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto w-full mb-12">
         <div className="p-8 md:p-16 bg-[#0A2540] text-white rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden group text-center space-y-6">
           <div className="absolute -right-20 -bottom-20 w-64 h-64 rounded-full border border-white/5 group-hover:scale-110 transition-transform duration-700 pointer-events-none" />
           
           <span className="inline-block text-[9px] font-mono tracking-widest bg-white/5 border border-white/10 px-4 py-1 rounded-full text-[#E5981A] font-bold uppercase">
             Verification Protocol Matrix
           </span>
-          <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight max-w-3xl mx-auto leading-tight">
+          <h3 className="text-3xl md:text-5xl font-bold text-white tracking-tight max-w-3xl mx-auto leading-tight">
             Ready to Secure Field Operator Networks?
           </h3>
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed font-light max-w-2xl mx-auto">
+          <p className="text-slate-300 text-sm md:text-base leading-relaxed font-normal max-w-2xl mx-auto">
             Bring compliance registers, structural field validation checkpoints, and multi-tier cryptographic authentication to your municipal networks. Connect with our engineering core to audit your system needs.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md mx-auto">
             <Link 
               href="/contact" 
-              className="bg-[#E5981A] hover:bg-[#E5981A]/90 text-[#0A2540] text-center font-extrabold tracking-wider text-xs uppercase px-8 py-4 rounded-xl transition-all shadow-md w-full"
+              className="bg-[#A62626] hover:bg-[#A62626]/90 text-white text-center font-bold tracking-wider text-xs uppercase px-8 py-4 rounded-xl transition-all shadow-md w-full active:scale-95 duration-150"
             >
               Deploy Identity Infrastructure
             </Link>
