@@ -20,8 +20,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#F8FAFC] text-[#0A2540] selection:bg-[#E5981A]/30 selection:text-[#0A2540] font-['Calibri',Calibri,Segoe_UI,sans-serif] antialiased">
       
-      {/* HERO BANNER - optimized for mobile */}
-      <section className="relative bg-[#0A2540] text-white w-full overflow-hidden flex items-center px-5 sm:px-6 md:px-12 lg:px-24 pt-6 sm:pt-8 md:pt-12 lg:pt-16 pb-12 sm:pb-20 md:pb-28 lg:pb-32">
+      {/* HERO BANNER - taller on mobile with min-height */}
+      <section className="relative bg-[#0A2540] text-white w-full overflow-hidden flex items-center px-5 sm:px-6 md:px-12 lg:px-24 pt-8 sm:pt-8 md:pt-12 lg:pt-16 pb-16 sm:pb-20 md:pb-28 lg:pb-32 min-h-[85vh] sm:min-h-0">
         
         {/* Background image with overlay */}
         <div className="absolute inset-0 z-0">
