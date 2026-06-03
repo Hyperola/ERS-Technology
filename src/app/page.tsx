@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#F8FAFC] text-[#0A2540] selection:bg-[#E5981A]/30 selection:text-[#0A2540] font-['Calibri',Calibri,Segoe_UI,sans-serif] antialiased">
       
-      {/* HERO BANNER - taller on mobile with min-height */}
+      {/* HERO BANNER - text size increased on mobile to fill space better */}
       <section className="relative bg-[#0A2540] text-white w-full overflow-hidden flex items-center px-5 sm:px-6 md:px-12 lg:px-24 pt-8 sm:pt-8 md:pt-12 lg:pt-16 pb-16 sm:pb-20 md:pb-28 lg:pb-32 min-h-[85vh] sm:min-h-0">
         
         {/* Background image with overlay */}
@@ -35,9 +35,9 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-20 w-full max-w-6xl mx-auto">
-          {/* Trust badge - mobile friendly */}
+          {/* Trust badge - slightly larger on mobile */}
           <div className="inline-flex mb-4 sm:mb-5 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <div className="inline-flex items-center gap-1.5 border border-[#E5981A]/40 bg-[#E5981A]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[8px] sm:text-[10px] font-semibold tracking-[0.1em] sm:tracking-[0.15em] text-[#E5981A] uppercase whitespace-nowrap">
+            <div className="inline-flex items-center gap-1.5 border border-[#E5981A]/40 bg-[#E5981A]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[10px] sm:text-[10px] font-semibold tracking-[0.1em] sm:tracking-[0.15em] text-[#E5981A] uppercase whitespace-nowrap">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E5981A] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#E5981A]"></span>
@@ -46,8 +46,8 @@ export default function HomePage() {
             </div>
           </div>
           
-          {/* Headline - much better on mobile */}
-          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.2] sm:leading-[1.15] text-white mb-3 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
+          {/* Headline - increased to text-4xl on mobile */}
+          <h1 className="text-4xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.2] sm:leading-[1.15] text-white mb-2 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-100">
             Building Africa’s <br />
             <span className="text-[#E5981A] relative inline-block">
               Digital Revenue
@@ -57,19 +57,19 @@ export default function HomePage() {
             </span> Infrastructure
           </h1>
           
-          {/* Description - tighter on mobile */}
-          <p className="text-slate-200 text-xs sm:text-sm md:text-lg max-w-3xl leading-relaxed mb-3 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
+          {/* Description - increased to text-base on mobile */}
+          <p className="text-slate-200 text-base sm:text-sm md:text-lg max-w-3xl leading-relaxed mb-2 sm:mb-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-200">
             Welcome to Ethical Recovery System Technologies Ltd (ERS) — Africa's emerging Digital Revenue Infrastructure company, providing intelligent technology systems that enable governments, transport institutions, unions, enterprises, and communities to automate, monitor, secure, and optimize revenue generation and remittance processes.
           </p>
 
-          {/* Quote accent */}
+          {/* Quote accent - increased to text-sm on mobile */}
           <div className="max-w-3xl border-l-3 border-[#E5981A] pl-3 sm:pl-4 py-0.5 sm:py-1 mb-4 sm:mb-6 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-300">
-            <p className="text-slate-300 text-[11px] sm:text-xs md:text-base leading-relaxed">
+            <p className="text-slate-300 text-sm sm:text-xs md:text-base leading-relaxed">
               ERS combines fintech infrastructure, mobility technology, payment systems, data intelligence, compliance tools, and digital ecosystem architecture into one integrated platform designed for Africa's evolving economy.
             </p>
           </div>
           
-          {/* CTA Buttons - full width on mobile */}
+          {/* CTA Buttons - consistent text size */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-400">
             <Link href="/contact" className="group relative bg-[#E5981A] hover:bg-[#f5a92a] text-[#0A2540] font-bold text-xs sm:text-sm px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-lg shadow-[#E5981A]/25 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 overflow-hidden w-full sm:w-auto">
               <span className="relative z-10 flex items-center justify-center gap-2">
@@ -88,8 +88,8 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Trust indicators - wrap properly on mobile */}
-          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-start gap-3 sm:gap-4 text-[9px] sm:text-[10px] text-slate-300 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-500">
+          {/* Trust indicators - increased to text-sm on mobile */}
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-start gap-3 sm:gap-4 text-sm sm:text-[10px] text-slate-300 animate-in fade-in slide-in-from-bottom-6 duration-700 delay-500">
             <span className="flex items-center gap-1.5">
               <svg className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#E5981A]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
