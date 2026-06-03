@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function BecomeAPartnerPage() {
@@ -17,7 +19,7 @@ export default function BecomeAPartnerPage() {
             <span className="text-[#E5981A]">Build Africa's Rails</span>
           </h1>
           <p className="text-slate-200 text-lg md:text-xl max-w-3xl leading-relaxed font-normal">
-            Submit your application details to integrate into ERS’s digital revenue ecosystems and open new market channels.
+            Submit your application details to integrate into ERS's digital revenue ecosystems and open new market channels.
           </p>
         </div>
       </section>
