@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
-export default function TransportUnionsPage() {
+export default function TransportUnionPartnershipsPage() {
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-[#0A2540] overflow-x-hidden selection:bg-[#E5981A]/30 selection:text-[#0A2540] font-['Calibri',Calibri,Segoe_UI,sans-serif]">
       {/* Hero Section */}
       <section className="relative bg-[#0A2540] text-white py-24 px-6 md:px-12 lg:px-24 flex flex-col justify-center min-h-[50vh] overflow-hidden text-left">
-        <div className="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-15 scale-105" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2000')` }} />
-        <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_bottom_right,#FFFFFF_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+        <div className="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-15 scale-105" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2000')` }} />
+        <div className="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#FFFFFF_1px,transparent_1px)] bg-[size:3rem_3rem]" />
         
         <div className="max-w-5xl space-y-6 relative z-10">
           <div className="inline-flex items-center gap-2 border border-[#E5981A]/30 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold tracking-widest text-[#E5981A] uppercase">
-            FLEET REVENUE EMPOWERMENT
+            Mobility Revenue Infrastructures
           </div>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1]">
-            Transport Unions & <br />
+            Transport Union & <br />
             <span className="text-[#E5981A]">Mobility Stakeholders</span>
           </h1>
           <p className="text-slate-200 text-lg md:text-xl max-w-3xl leading-relaxed font-normal">
-            Empowering localized transport executives, union administrators, and commercial park fleets with automated ticketing toolkits.
+            Integrating advanced ticketing, secure transit validation systems, and union remittance layers for complex motor parks and commercial transport networks.
           </p>
         </div>
       </section>
@@ -29,32 +29,51 @@ export default function TransportUnionsPage() {
           {/* Main Context Panel */}
           <div className="bg-white border border-slate-200 p-8 md:p-12 rounded-3xl shadow-xl text-left grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-3">
-              <span className="text-xs font-bold text-[#A62626] uppercase tracking-widest">Sustaining Transport Ecosystems</span>
-              <h2 className="text-3xl font-bold tracking-tight">Structured Operational Alliances</h2>
+              <span className="text-xs font-bold text-[#A62626] uppercase tracking-widest">Intelligent Transport Networks</span>
+              <h2 className="text-3xl font-bold tracking-tight">Structured Automated Collection Loops</h2>
               <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                We don't bypass transport structures; we empower them. Our specialized union frameworks protect structural stakeholder dynamics by running automated split logic loops, making sure correct fractions reach vehicle owners and committees transparently.
+                By co-designing dedicated collection layers with prominent transport unions and fleet operators, ERS simplifies daily ticket management workflows. We transform park levy points into transparent revenue grids, allowing executive councils to systematically eliminate leakage pathways and optimize union funding streams.
               </p>
             </div>
             <div className="lg:col-span-4 lg:text-right">
-              <Link href="/contact?ref=union-partner" className="inline-block bg-[#A62626] hover:bg-[#b82d2d] text-white font-bold text-xs uppercase px-8 py-4 rounded-xl shadow-md transition-all">
-                Deploy Union Revenue Rails
+              <Link href="/partnerships/become-a-partner" className="inline-block bg-[#0A2540] hover:bg-slate-900 text-white font-bold text-xs uppercase px-8 py-4 rounded-xl shadow-md transition-all tracking-wider">
+                Deploy Smart Ticketing
               </Link>
             </div>
           </div>
 
           {/* Subfeatures Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
             <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-lg space-y-4">
-              <h3 className="font-bold text-lg text-[#0A2540]">Park Executive Console</h3>
+              <h3 className="font-bold text-lg text-[#0A2540]">Smart Transit Ticketing</h3>
               <p className="text-slate-500 text-sm leading-relaxed">
-                Dedicated management views built for route leadership, providing absolute clarity on total daily tickets issued and vehicle frequencies across parks.
+                Robust hardware and smartphone software layers tailored specifically to manage park entries, fleet logs, and traveler levies efficiently.
               </p>
             </div>
             <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-lg space-y-4">
-              <h3 className="font-bold text-lg text-[#0A2540]">Welfare Levy Tracking</h3>
+              <h3 className="font-bold text-lg text-[#0A2540]">Operator Verification</h3>
               <p className="text-slate-500 text-sm leading-relaxed">
-                Automated collections configured to branch internal member mutual fees straight into group saving accounts cleanly and without dispute.
+                Secure KYC and operator identity tracking modules that authenticate registered drivers and suppress illegal collection operators along active transit corridors.
               </p>
+            </div>
+            <div className="bg-white border border-slate-200 p-8 rounded-2xl shadow-lg space-y-4">
+              <h3 className="font-bold text-lg text-[#0A2540]">Real-Time Union Dashboards</h3>
+              <p className="text-slate-500 text-sm leading-relaxed">
+                Live monitoring nodes tracking daily, weekly, and state-wide ticket disbursements, ensuring total operational accountability for union trustees.
+              </p>
+            </div>
+          </div>
+
+          {/* Page Bottom CTA Block */}
+          <div className="bg-[#0A2540] text-white p-8 md:p-12 rounded-3xl text-center space-y-6 relative overflow-hidden">
+            <div className="relative z-10 max-w-2xl mx-auto space-y-3">
+              <h3 className="text-2xl font-bold">Automate Your Transit Operations</h3>
+              <p className="text-slate-300 text-sm">Empower your association trustees and secure park administration revenue with intelligent technology ecosystems.</p>
+              <div className="pt-4">
+                <Link href="/partnerships/become-a-partner" className="inline-block bg-[#E5981A] hover:bg-[#f5a92a] text-[#0A2540] font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-xl shadow-md transition-all">
+                  Register as Mobility Partner
+                </Link>
+              </div>
             </div>
           </div>
 
