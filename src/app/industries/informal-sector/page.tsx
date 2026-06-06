@@ -1,70 +1,65 @@
-// src/app/ecosystem/merchant-agent/page.tsx
+// src/app/industries/informal-sector/page.tsx
 import Link from 'next/link';
 
-export default function MerchantAgentNetworkPage() {
-  const items = [
-    { title: "Tough Point-of-Sale Hardware", text: "We supply field teams with heavy-duty handheld card devices that print instant receipts and confirm payments out on the street smoothly." },
-    { title: "Easy Daily Ledgers", text: "Shop owners and retail managers get a straightforward phone app to track daily customer spending without complex accounting knowledge." },
-    { title: "Safe Float Management", text: "We constantly check and verify balance entries across our agent network, keeping cash-out points stable and protected from fraud." }
-  ];
-
+export default function InformalSectorNetworksPage() {
   const features = [
     {
-      title: "Agent Onboarding & Training",
-      desc: "Simple registration, KYC, and training modules – get new agents collecting in days, not weeks."
+      title: "Offline USSD Engines",
+      desc: "Process balances, confirm transactions, and secure collection files reliably over basic GSM channels with zero active web dependencies."
     },
     {
-      title: "White‑Label Agent App",
-      desc: "Fully branded mobile app for your agents – accept payments, view transaction history, and manage floats."
+      title: "Micro‑KYC Profiling",
+      desc: "Simplified, accessible registration frameworks optimised to onboard micro‑merchants and establish reliable baseline transaction paths."
     },
     {
-      title: "Real‑Time Commission Settlement",
-      desc: "Automatically calculate and settle agent commissions on every transaction – no manual reconciliation."
+      title: "Field Agent Safety Tools",
+      desc: "Synchronised collection interfaces built to verify physical cash handovers on the ground and prevent localised shrinkage."
     },
     {
-      title: "Geo‑Tagged Transactions",
-      desc: "Every payment is tagged with GPS coordinates, providing proof of location and reducing fraud."
+      title: "Voice & SMS Notifications",
+      desc: "Keep informal traders informed with transaction confirmations, payment reminders, and balance alerts via voice or SMS – no smartphone required."
     },
     {
-      title: "Centralised Agent Dashboard",
-      desc: "Monitor agent performance, transaction volumes, and float balances from one control panel."
+      title: "Agent Network Management",
+      desc: "Onboard, train, and monitor field agents who serve as last‑mile collection points – with real‑time performance dashboards."
     },
     {
-      title: "Bulk Payment Distribution",
-      desc: "Pay commissions, reimbursements, or incentives to thousands of agents with one click."
+      title: "Progressive Digital Identity",
+      desc: "Start with basic KYC (name, phone, location) and upgrade to full digital ID as traders adopt more services – no up‑front barriers."
     }
   ];
 
   const benefits = [
-    "Expand collection points without building physical offices",
-    "Reduce cash handling risks and fraud",
-    "Real‑time visibility into agent activity and float usage",
-    "Lower collection costs compared to bank branches or own offices",
-    "Empower local businesses with new revenue streams (commissions)"
+    "Bring unbanked micro‑traders into the formal economy",
+    "Reduce cash handling risks with verifiable digital records",
+    "Expand collection points without building physical infrastructure",
+    "Enable remote onboarding – no smartphone or internet required",
+    "Build trusted transaction histories for future credit access"
   ];
 
   const servedSectors = [
-    "Utility Bill Payment Agents",
-    "Tax & Levy Collection Agents",
-    "Transport Fare Collectors",
-    "Market & Trade Association Agents",
-    "Microfinance Banking Agents",
-    "Government Service Payment Points"
+    "Mobile Money Agents & Vendors",
+    "Market & Street Traders",
+    "Artisans & Craftsmen",
+    "Agricultural Smallholders",
+    "Transport & Logistics Micro‑Operators",
+    "Home‑Based Enterprises"
   ];
 
   return (
     <main className="min-h-screen bg-[#F8FAFC] text-[#1C1F61] overflow-x-hidden selection:bg-[#F48B25]/30 selection:text-[#1C1F61] font-['Calibri',Calibri,Segoe_UI,sans-serif]">
       
-      {/* HERO BANNER – brand colors, reliable agent network image */}
+      {/* HERO BANNER – brand colors, unique informal sector image */}
       <section className="relative bg-[#1C1F61] text-white w-full overflow-hidden flex items-center min-h-[60vh] sm:min-h-0">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2070"
-            alt="Merchant and agent network"
+            src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2070"
+            alt="Informal sector and digital onboarding"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/95 via-[#1C1F61]/95 to-[#1C1F61]/95 sm:bg-gradient-to-r sm:from-[#1C1F61]/95 sm:via-[#1C1F61]/85 sm:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/90 via-transparent to-transparent" />
+          {/* Lighter overlay: reduced opacity for better image visibility */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/80 via-[#1C1F61]/75 to-[#1C1F61]/80 sm:bg-gradient-to-r sm:from-[#1C1F61]/80 sm:via-[#1C1F61]/70 sm:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/70 via-transparent to-transparent" />
         </div>
 
         <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 py-12 sm:py-16 md:py-20 lg:py-24">
@@ -75,20 +70,20 @@ export default function MerchantAgentNetworkPage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#F48B25] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#F48B25]"></span>
                 </span>
-                Retail & Field Partners
+                Financial Inclusion Pathways
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-[1.2] text-white">
-              Merchant & Agent <br />
-              <span className="text-[#F48B25]">Collection Networks</span>
+              Informal Sector Networks <br />
+              <span className="text-[#F48B25]">& Digital Onboarding</span>
             </h1>
             <p className="text-slate-200 text-sm sm:text-base md:text-lg max-w-3xl leading-relaxed">
-              Empowering local shops, field collection workers, and mobile agents with the exact tools they need to collect bills and process items easily – online or offline.
+              High‑accessibility channel software toolkits designed to bridge unbanked micro‑traders into secure transaction ecosystems safely – online or offline.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link href="/contact" className="group relative bg-[#F48B25] hover:bg-[#f59b3a] text-[#1C1F61] font-bold text-xs sm:text-sm md:text-base px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl shadow-lg shadow-[#F48B25]/25 transition-all duration-300 text-center hover:-translate-y-0.5 active:translate-y-0 overflow-hidden w-full sm:w-auto">
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  Onboard New Agents
+                  Launch Onboarding Campaign
                   <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
@@ -106,40 +101,30 @@ export default function MerchantAgentNetworkPage() {
         </div>
       </section>
 
-      {/* MAIN CONTENT – split layout: description + three agent features */}
+      {/* MAIN CONTEXT PANEL */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-12 sm:py-16 relative z-20 -mt-6 sm:-mt-8">
-        <div className="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 items-stretch">
-          {/* Left column – main narrative */}
-          <div className="p-6 sm:p-8 md:p-10 lg:col-span-7 space-y-4">
-            <span className="text-xs font-bold text-[#CF1B1B] uppercase tracking-widest block">In Your Neighborhood</span>
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1C1F61]">Bringing Secure Payments Closer</h2>
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-300 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div className="lg:col-span-8 space-y-3">
+            <span className="text-xs font-bold text-[#CF1B1B] uppercase tracking-widest">Inclusive Field Architecture</span>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#1C1F61]">Offline‑First Transaction Networks</h2>
             <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              We make it easy to pay utility bills, local market dues, and transport fees right in your neighborhood. By putting our simple apps in the hands of trusted local agents, citizens no longer have to travel to distant city offices just to make basic payments.
+              We bridge smart financial services across low‑connectivity environments. By deploying specialised offline processing paths and basic identity protocols, we bring data transparency to market networks without requiring continuous smartphone internet access.
             </p>
-            <div className="pt-4">
-              <Link href="/contact" className="inline-block bg-[#CF1B1B] hover:bg-[#b31515] text-white font-bold text-xs uppercase px-6 py-3 rounded-xl shadow-md transition-all">
-                Onboard New Field Agents →
-              </Link>
-            </div>
           </div>
-          {/* Right column – three agent capabilities */}
-          <div className="p-6 sm:p-8 md:p-10 bg-[#F8FAFC] lg:col-span-5 border-t lg:border-t-0 lg:border-l border-slate-200/60 flex flex-col justify-center space-y-5">
-            {items.map((op, idx) => (
-              <div key={idx} className="space-y-1">
-                <h4 className="font-bold text-[#1C1F61] text-sm">{op.title}</h4>
-                <p className="text-slate-500 text-xs sm:text-sm leading-relaxed">{op.text}</p>
-              </div>
-            ))}
+          <div className="lg:col-span-4 lg:text-right">
+            <Link href="/contact" className="inline-block bg-[#CF1B1B] hover:bg-[#b31515] text-white font-bold text-xs uppercase px-6 py-3 rounded-xl shadow-md transition-all">
+              Launch Onboarding Campaign →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* FEATURES GRID – 6 agent network capabilities */}
+      {/* FEATURES GRID – 6 capabilities */}
       <section className="bg-white py-16 sm:py-20 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-2">
-            <span className="text-[10px] sm:text-xs font-bold text-[#CF1B1B] uppercase tracking-wider">Agent Network Capabilities</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">What Our Agent Platform Delivers</h2>
+            <span className="text-[10px] sm:text-xs font-bold text-[#CF1B1B] uppercase tracking-wider">Inclusion Capabilities</span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">What Our Informal Sector Platform Delivers</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {features.map((feature, idx) => (
@@ -162,10 +147,10 @@ export default function MerchantAgentNetworkPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4 border-l-4 border-[#F48B25] pl-5">
-              <span className="text-[10px] sm:text-xs font-bold text-[#CF1B1B] uppercase tracking-wider">Why an Agent Network?</span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">Tangible Benefits for Your Institution</h2>
+              <span className="text-[10px] sm:text-xs font-bold text-[#CF1B1B] uppercase tracking-wider">Why Digitise the Informal Sector?</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">Tangible Benefits for Inclusion Programmes</h2>
               <p className="text-slate-600 text-sm leading-relaxed">
-                Extend your collection reach without building expensive physical offices. Leverage existing local businesses and field agents to collect payments anywhere, anytime – with full oversight and real‑time reconciliation.
+                Millions of micro‑traders operate entirely outside the formal economy. Our platform provides a low‑barrier, offline‑capable digital identity and transaction system – bringing them into regulated financial networks safely.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -182,12 +167,12 @@ export default function MerchantAgentNetworkPage() {
         </div>
       </section>
 
-      {/* WHO WE SERVE – agent sectors */}
+      {/* WHO WE SERVE */}
       <section className="bg-white py-16 sm:py-20 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
             <span className="text-[10px] sm:text-xs font-bold text-[#CF1B1B] uppercase tracking-wider">Deployment Footprint</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">Trusted by Agent‑Driven Institutions</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[#1C1F61]">Reaching the Unreached</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {servedSectors.map((sector, idx) => (
@@ -199,34 +184,34 @@ export default function MerchantAgentNetworkPage() {
         </div>
       </section>
 
-      {/* TECHNICAL HIGHLIGHTS – agent management & security */}
+      {/* TECHNICAL HIGHLIGHTS */}
       <section className="bg-[#1C1F61] text-white py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-4">
-              <span className="text-xs font-bold text-[#F48B25] uppercase tracking-wider">Agent‑First Design</span>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">Manage Thousands of Agents from One Console</h2>
+              <span className="text-xs font-bold text-[#F48B25] uppercase tracking-wider">Offline‑First by Design</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">No Smartphone? No Internet? No Problem.</h2>
               <p className="text-slate-300 text-sm leading-relaxed">
-                Our agent management platform gives you a single view of every agent, their transaction history, float balance, and performance metrics. Onboard new agents in minutes, set custom commission structures, and disburse payments automatically.
+                Our platform works on basic feature phones via USSD, SMS, and voice. Traders can register, check balances, make payments, and receive receipts – all without a smartphone or data connection. Data syncs automatically when connectivity returns.
               </p>
               <ul className="space-y-2 pt-2">
                 <li className="flex items-start gap-2 text-sm text-slate-300">
                   <svg className="w-4 h-4 text-[#F48B25] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Biometric login for field agents to prevent unauthorised use
+                  Zero‑data USSD menus for all core actions
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-300">
                   <svg className="w-4 h-4 text-[#F48B25] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Real‑time float monitoring – get alerts when balances run low
+                  Voice biometrics for secure authentication
                 </li>
                 <li className="flex items-start gap-2 text-sm text-slate-300">
                   <svg className="w-4 h-4 text-[#F48B25] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
-                  Automated commission payouts to agents’ mobile money or bank accounts
+                  Offline transaction caching with automatic sync
                 </li>
               </ul>
             </div>
@@ -235,23 +220,23 @@ export default function MerchantAgentNetworkPage() {
                 <div className="flex items-center gap-3 border-b border-white/10 pb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#F48B25]/20 flex items-center justify-center">
                     <svg className="w-5 h-5 text-[#F48B25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M6 14h12m-9 4h6M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1z" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold">Offline Transaction Support</h4>
-                    <p className="text-xs text-slate-400">Agents can collect payments even without internet – syncs later</p>
+                    <h4 className="font-bold">Multi‑Language Support</h4>
+                    <p className="text-xs text-slate-400">USSD and SMS in local languages for maximum accessibility</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-[#F48B25]/20 flex items-center justify-center">
                     <svg className="w-5 h-5 text-[#F48B25]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-bold">End‑to‑End Encryption</h4>
-                    <p className="text-xs text-slate-400">All agent transactions secured from device to central server</p>
+                    <h4 className="font-bold">Graduation Pathway</h4>
+                    <p className="text-xs text-slate-400">From informal trader to formal SME – progressive KYC and credit building</p>
                   </div>
                 </div>
               </div>
@@ -260,7 +245,7 @@ export default function MerchantAgentNetworkPage() {
         </div>
       </section>
 
-      {/* FINAL CTA – consistent with homepage */}
+      {/* FINAL CTA */}
       <section className="py-16 sm:py-20 bg-[#F8FAFC] border-t border-slate-200/60">
         <div className="max-w-5xl mx-auto px-6 md:px-12">
           <div className="bg-gradient-to-br from-[#1C1F61] to-[#2a2e7a] text-white rounded-2xl sm:rounded-[2rem] p-6 sm:p-8 md:p-12 text-center space-y-5">
@@ -268,14 +253,14 @@ export default function MerchantAgentNetworkPage() {
               Deployment Gateway
             </span>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight max-w-2xl mx-auto leading-tight">
-              Ready to Expand Your Collection Network?
+              Ready to Bring Informal Traders into the Digital Economy?
             </h2>
             <p className="text-slate-300 max-w-2xl text-xs sm:text-sm md:text-base leading-relaxed mx-auto">
-              Join governments, utilities, and financial institutions already using ERS to deploy agent networks at scale. Onboard agents in days, reduce costs, and increase collection points.
+              Join governments, financial inclusion programmes, and development partners already using ERS to onboard the unbanked, reduce cash leakage, and build formal transaction histories.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
               <Link href="/contact" className="bg-[#F48B25] hover:bg-[#f59b3a] text-[#1C1F61] font-bold text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all shadow-md">
-                Onboard New Agents
+                Launch Onboarding Campaign
               </Link>
               <Link href="/" className="border border-white/40 hover:border-white text-white text-xs sm:text-sm px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all">
                 Return to Home

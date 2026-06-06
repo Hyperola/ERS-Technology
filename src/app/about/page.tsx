@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#F8FAFC] text-[#1C1F61] selection:bg-[#F48B25]/30 selection:text-[#1C1F61] font-['Calibri',Calibri,Segoe_UI,sans-serif]">
       
-      {/* 1. HERO BANNER – both top and bottom padding reduced */}
+      {/* 1. HERO BANNER – lighter overlay */}
       <section className="relative bg-[#1C1F61] text-white w-full overflow-hidden flex items-center min-h-screen sm:min-h-0">
         <div className="absolute inset-0 z-0">
           <img 
@@ -22,12 +22,12 @@ export default function AboutPage() {
             alt="Corporate infrastructure"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/95 via-[#1C1F61]/95 to-[#1C1F61]/95 sm:bg-gradient-to-r sm:from-[#1C1F61]/95 sm:via-[#1C1F61]/95 sm:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/90 via-transparent to-transparent" />
+          {/* Lighter overlays to show the background */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/70 via-[#1C1F61]/75 to-[#1C1F61]/70 sm:bg-gradient-to-r sm:from-[#1C1F61]/80 sm:via-[#1C1F61]/55 sm:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/45 via-transparent to-transparent" />
         </div>
 
-        {/* Padding reduced: pt-2 sm:pt-4 md:pt-6 lg:pt-10, pb-8 sm:pb-12 md:pb-16 lg:pb-24 */}
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 pt-2 sm:pt-4 md:pt-6 lg:pt-10 pb-8 sm:pb-12 md:pb-16 lg:pb-24">
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 pt-2 sm:pt-4 md:pt-6 lg:pt-10 pb-8 sm:pb-12 md:pb-16 lg:pb-24 backdrop-blur-[2px]">
           <div className="max-w-4xl space-y-6 sm:space-y-8">
             <div className="inline-flex">
               <div className="inline-flex items-center gap-1.5 border border-[#F48B25]/40 bg-[#F48B25]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[9px] sm:text-[10px] font-semibold tracking-[0.15em] text-[#F48B25] uppercase">

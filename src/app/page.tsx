@@ -60,7 +60,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden bg-[#F8FAFC] text-[#1C1F61] selection:bg-[#F48B25]/30 selection:text-[#1C1F61] font-['Calibri',Calibri,Segoe_UI,sans-serif] antialiased">
       
-      {/* HERO BANNER – brand dark #1C1F61 */}
+      {/* HERO BANNER – darker overlay & reduced top padding */}
       <section className="relative bg-[#1C1F61] text-white w-full overflow-hidden flex items-center min-h-screen sm:min-h-0">
         <div className="absolute inset-0 z-0">
           <img 
@@ -68,12 +68,13 @@ export default function HomePage() {
             alt="Digital infrastructure Africa"
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/95 via-[#1C1F61]/95 to-[#1C1F61]/95 sm:bg-gradient-to-r sm:from-[#1C1F61]/95 sm:via-[#1C1F61]/95 sm:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/90 via-transparent to-transparent" />
+          {/* Darker overlay: opacity between the original very dark and the previous too-light */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#1C1F61]/80 via-[#1C1F61]/85 to-[#1C1F61]/80 sm:bg-gradient-to-r sm:from-[#1C1F61]/85 sm:via-[#1C1F61]/65 sm:to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1C1F61]/55 via-transparent to-transparent" />
         </div>
 
-        {/* MODIFIED: Reduced bottom padding slightly to balance the pull-up overflow section below */}
-        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 pt-4 sm:pt-6 md:pt-10 lg:pt-14 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+        {/* Reduced top padding for tighter layout */}
+        <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 pt-2 sm:pt-3 md:pt-6 lg:pt-8 pb-12 sm:pb-16 md:pb-20 lg:pb-24 backdrop-blur-[2px]">
           <div className="max-w-4xl space-y-4 sm:space-y-5">
             <div className="inline-flex mb-2 animate-in fade-in slide-in-from-bottom-4 duration-700">
               <div className="inline-flex items-center gap-1.5 border border-[#F48B25]/40 bg-[#F48B25]/10 backdrop-blur-sm px-2.5 py-1 sm:px-3 rounded-full text-[9px] sm:text-[10px] font-semibold tracking-[0.15em] text-[#F48B25] uppercase">
