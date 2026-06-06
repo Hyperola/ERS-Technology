@@ -64,8 +64,8 @@ export default function HomePage() {
       <section className="relative bg-[#1C1F61] text-white w-full overflow-hidden flex items-center min-h-screen sm:min-h-0">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074"
-            alt="Digital infrastructure Africa"
+            src="/land.jpg"
+            alt="Digital revenue infrastructure Africa"
             className="w-full h-full object-cover object-center"
           />
           {/* Darker overlay: opacity between the original very dark and the previous too-light */}

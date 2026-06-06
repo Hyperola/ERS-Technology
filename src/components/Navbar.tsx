@@ -224,19 +224,19 @@ export default function Navbar() {
     <header className="w-full bg-white text-[#1C1F61] border-b border-slate-200 sticky top-0 z-50 py-3 sm:py-4 px-6 md:px-12 backdrop-blur-md bg-opacity-95 transition-all duration-300 font-['Calibri',Calibri,Segoe_UI,sans-serif]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         
-        {/* Logo */}
+        {/* Logo – increased size */}
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity" onClick={closeDropdown}>
           <Image 
             src="/logo.jpeg" 
             alt="ERS Technologies Logo" 
-            width={48} 
-            height={48} 
-            className="object-contain w-auto h-10 sm:h-12 md:h-14"
+            width={60} 
+            height={60} 
+            className="object-contain w-auto h-12 sm:h-14 md:h-16"
             priority
           />
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation – unchanged */}
         <nav className="hidden xl:flex items-center gap-8 lg:gap-10">
           <Link 
             href="/" 
@@ -338,7 +338,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
+        {/* Desktop CTA – unchanged */}
         <div className="hidden xl:flex items-center gap-4">
           <Link 
             href="/contact" 
@@ -353,7 +353,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle – unchanged */}
         <button 
           ref={mobileButtonRef}
           onClick={() => setIsOpen(!isOpen)}
@@ -364,7 +364,7 @@ export default function Navbar() {
           {isOpen ? "✕" : "≡"}
         </button>
 
-        {/* Mobile Drawer */}
+        {/* Mobile Drawer – unchanged */}
         {isOpen && (
           <div 
             ref={mobileMenuRef}
